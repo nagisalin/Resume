@@ -23,7 +23,7 @@ const Header = (props) => {
 			<img className="Header-Logo" src={LogoPng} alt="Header-Logo" />
 
 			<div className="Header-Items">
-				<Link to="/" className="Header-Items-Resume">Resume</Link>
+				<Link to="/resume" className="Header-Items-Resume">Resume</Link>
 				{HeaderItems.map(item => {
 					return (
 						<Link to={item.path} key={item.path} id={item.path}>
