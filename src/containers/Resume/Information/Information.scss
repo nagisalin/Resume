@@ -1,0 +1,160 @@
+.informationSection {
+	height: fit-content;
+	min-height: 100vh;
+
+	color: black;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	padding: 140px 200px 105px 200px;
+
+	.information-info {
+		display: flex;
+
+		.information-info-detail {
+			display: flex;
+			flex-direction: column;
+			font-size: 20px;
+		
+			min-width: 40%;
+
+			.information-info-avatar {
+				text-align: center;
+
+				.avatarImg {
+					width: 120px;
+	
+					vertical-align: middle;
+					border-radius: 50%;
+
+					margin-right: 45px;
+				}
+			}
+			
+			.name {
+				margin-top: 16px;
+				font-size: 2em;
+			}
+
+			.job {
+				font-size: 1.8em;
+				font-family: 'BioRhyme', 'Noto Serif TC', 'Noto Serif SC', 'Noto Serif KR', 'Noto Serif JP', 'Noto Serif', 'Songti TC', serif;
+				color: #f738f0;
+			}
+		}
+
+		.information-info-intro {
+			font-size: 18px;
+			white-space: pre-wrap;
+
+			p {
+				text-align: center;
+				margin-bottom: 16px;
+				font-size: 22px;
+			}
+		}
+	}
+
+	.information-bottom {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		margin-top: 20px;
+		font-size: 2em;
+
+		.information-bottom-skill {
+			display: flex;
+			font-size: 18px;
+
+			.information-bottom-skill-items {
+				flex: 1;
+				padding: 16px;
+
+				.information-bottom-skill-item-title {
+					margin-bottom: 16px;
+				}
+
+				.information-bottom-skill-item-text {
+					white-space: pre-wrap;
+				}
+			}
+		}
+	}
+}
+
+.underline {
+	border-bottom: 2px solid black;
+
+	&.w100 {
+		width: 100%;
+	}
+
+	&.w90 {
+		width: 90%;
+	}
+}
+
+@media (max-width: 1280px) {
+	.informationSection {
+		padding: 140px 150px 105px 150px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.informationSection {
+		padding: 140px 100px 105px 100px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.informationSection {
+		padding: 140px 60px 105px 60px;
+	}
+}
+
+@media (max-width: 950px) {
+	.informationSection {
+		.information-info {
+			flex-direction: column;
+
+			.information-info-detail {
+				align-items: center;
+
+				.information-info-avatar {
+					.avatarImg {
+						margin-right: initial;
+					}
+				}
+			}
+
+			.information-info-intro {
+				margin-top: 24px;
+
+				p {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.informationSection {
+		.information-bottom {
+
+
+			.information-bottom-skill {
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.informationSection {
+		padding: 140px 16px 105px 16px;
+	}
+}

@@ -1,0 +1,80 @@
+.icon-menu-main {
+	position: relative;
+	display: inline-block;
+	height: fit-content;
+	cursor: pointer;
+}
+
+.icon-menu-main-btn {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	border: none;
+	outline: none;
+	background-color: #ffffff;
+	font-size: 16px;
+
+	&:hover {
+		background-color: #f9f9f9;
+	}
+}
+
+.icon-menu-list {
+	position: absolute;
+	top: 100%;
+	z-index: 2;
+	display: none;
+	max-height: 600px;
+	padding: 0px 0;
+	background: #ffffff;
+	/* border: 2px solid #EAEDEF; */
+	border: 1px solid #d4e1ee;
+	border-radius: 4px;
+	box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.1);
+	list-style: none;
+	overflow-y: auto;
+	white-space: nowrap;
+
+	&.align-left {
+		left: 0;
+		transform: translate(0%, 5px);
+	}
+
+	&.align-center {
+		left: 50%;
+		transform: translate(-50%, 15px);
+	}
+
+	&.align-right {
+		right: 0;
+		transform: translate(0%, 2px);
+	}
+
+	&.align-down-right {
+		top: initial;
+		bottom: 100%;
+		right: 0;
+		transform: translate(0%, 100px);
+	}
+	&.align-up-right {
+		top: initial;
+		bottom: 100%;
+		right: 0;
+		transform: translate(0%, 2px);
+	}
+
+	&.active {
+		display: block;
+	}
+}
+
+.icon-menu-main.show-top .icon-menu-list.active {
+	bottom: 100%;
+	top: unset;
+}
+
+.icon-menu-divider {
+	height: 1px;
+	background-color: #ebeff2;
+}

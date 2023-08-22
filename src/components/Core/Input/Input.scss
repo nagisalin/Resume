@@ -1,0 +1,57 @@
+.input-text {
+	height: 46px;
+	padding: 8px;
+	border: 1px solid #b8c3d9;
+	border-radius: 4px;
+	text-align: left;
+	font-size: 16px;
+	color: #29354c;
+
+	&:disabled {
+		color: #b8c3d9;
+		border: 1px solid #f4f7f9;
+		background-color: #f4f7f9;
+	}
+
+	&::placeholder {
+		/* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: #b8c3d9;
+		font-weight: 400;
+	}
+
+	&:-ms-input-placeholder {
+		/* Internet Explorer 10-11 */
+		color: #b8c3d9;
+		font-weight: 400;
+	}
+
+	&::-ms-input-placeholder {
+		/* Microsoft Edge */
+		color: #b8c3d9;
+		font-weight: 400;
+	}
+	&.is-alert {
+		color: #fc4f52;
+		border: 1px solid #fc4f52;
+	}
+	&:focus {
+		color: #2f80ed;
+		border: 1.5px solid #2f80ed;
+	}
+	&.is-view-only {
+		pointer-events: none;
+		color: #29354c;
+		border: 1px solid #f4f7f9;
+		background-color: #f4f7f9;
+	}
+}
+
+@mixin customInputIcon($url) {
+	content: '';
+	background: url($url) no-repeat;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	background-size: contain;
+	right: 6px;
+}

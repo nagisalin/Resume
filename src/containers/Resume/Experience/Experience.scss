@@ -1,0 +1,125 @@
+.ExperienceSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 116px 200px 0px 200px;
+
+	height: fit-content;
+	min-height: 100vh;
+
+	.timeline-container {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		height: 100%;
+	
+		.timeline-axis {
+			width: 5px;
+			background-color: green;
+			margin-right: 10px;
+			height: 100%;
+		}
+		
+		.timeline {
+			display: flex;
+			flex-direction: column;
+			margin-top: 40px;
+		
+			.timeline-item {
+				display: flex;
+				align-items: flex-start;
+				margin-top: 40px;
+			
+				.circle {
+					width: 20px;
+					height: 20px;
+					background-color: blue;
+					border-radius: 50%;
+					margin-right: 10px;
+				}
+			
+				.job-intro {
+					display: flex;
+					flex-direction: column;
+					min-width: 300px;
+	
+					.duration {
+	
+					}
+
+					.title {
+						font-size: 23px;
+						margin-top: 5px;
+					}
+					
+					.company {
+						color: gray;
+					}
+					
+					.position {
+						margin-top: 16px;
+						white-space: pre-wrap;
+					}
+				}
+
+				.job-list {
+					margin-top: 27px;
+					margin-left: 50px;
+					white-space: pre-wrap;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1280px) {
+	.ExperienceSection {
+		padding: 160px 150px 50px 100px;
+	}
+}
+
+@media (max-width: 1080px) {
+	.ExperienceSection {
+		padding: 160px 100px 50px 100px;
+	}
+}
+
+@media (max-width: 950px) {
+	.ExperienceSection {
+		padding: 160px 80px 50px 80px;
+
+		.timeline-container {
+			.timeline-axis {
+				height: 100vh;
+			}
+
+			.timeline {
+				.timeline-item {
+					position: relative;
+					flex-direction: column;
+
+					.circle {
+						position: absolute;
+						left: -23px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 780px) {
+	.ExperienceSection {
+		padding: 160px 40px 50px 40px;
+
+		.timeline-container {
+			.timeline {
+				.timeline-item {
+					.job-list {
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+	}
+}

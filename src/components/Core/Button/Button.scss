@@ -1,0 +1,67 @@
+$btn-min-height: 32px;
+
+.custom-button {
+	min-height: $btn-min-height;
+	color: #29354c;
+	background: #ffffff;
+	border: 1px solid #29354c;
+	border-radius: 4px;
+	box-sizing: border-box;
+	padding: 4px 24px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 500;
+	user-select: none;
+
+	&.primary {
+		color: #ffffff;
+		background: #2f80ed;
+		border: none;
+
+		&:hover {
+			background: #286dc9;
+		}
+	}
+
+	&.disabled {
+		background: #b8c3d9;
+		cursor: not-allowed;
+		border: none;
+		color: white;
+		pointer-events: none;
+		&:hover {
+			background: #b8c3d9;
+		}
+	}
+
+	&.primary-yellow {
+		background: #fed602;
+		border: 1px solid #debb00;
+		color: #29354c;
+
+		&:hover {
+			background: #debb00;
+			border: 1px solid #fed602;
+		}
+	}
+
+	&.tertiary {
+		color: #fed602;
+		background: rgba(255, 255, 255, 0.2);
+		border: 1px solid #fed602;
+	}
+
+	&.alert {
+		color: #ffffff;
+		background-color: #fc4f52;
+		border: none;
+
+		// to overwrite bootstrap css
+		padding: 4px 24px;
+		margin: 0;
+
+		&:hover {
+			background-color: #d64346;
+		}
+	}
+}

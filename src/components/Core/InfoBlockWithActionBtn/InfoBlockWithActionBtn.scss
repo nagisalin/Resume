@@ -1,0 +1,27 @@
+.info-block-cont {
+	position: relative;
+
+	.info-block-header-cont {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 16px;
+
+		.block-header-label {
+			width: 6px;
+			height: 30px;
+			border-radius: 0px 3px 3px 0px;
+			position: absolute;
+			left: 0;
+		}
+
+		.block-header-text {
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 20px;
+			color: #6f8190;
+			margin: 0;
+			padding: 20px 0;
+		}
+	}
+}

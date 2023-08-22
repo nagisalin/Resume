@@ -1,0 +1,41 @@
+.DemoBlock {
+	display:flex;
+	padding: 16px;
+	margin-top: 40px;
+
+	&.inverse {
+		flex-direction: row-reverse;
+	}
+
+	.DemoBlock-Img {
+		width: 50%;
+	}
+
+	.DemoBlock-Content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+
+		.DemoBlock-Content-Title {
+			text-align: center;
+			font-size: 22px;
+			font-weight: bold;
+		}
+
+		.DemoBlock-Content-description {
+			margin: 16px 0px 0px 24px;
+			white-space: pre-wrap;
+
+			&.inverse {
+				margin: 16px 24px 0px 0px;
+			}
+		}
+
+		.DemoBlock-Content-demoLink {
+			color: blue;
+			font-size: 22px;
+			margin-top: 16px;
+		}
+	}
+}

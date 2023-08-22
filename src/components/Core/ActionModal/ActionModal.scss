@@ -1,0 +1,102 @@
+@mixin modal {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #d4e1ee;
+}
+
+@mixin modal-header {
+	flex: 0 0 88px;
+	line-height: 88px;
+	display: flex;
+	align-items: center;
+	padding: 0 48px;
+	font-weight: 500;
+	font-size: 20px;
+	color: #29354c;
+
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	max-width: calc( 100% - 60px);
+}
+
+@mixin modal-header-title {
+	margin-right: 8px;
+	flex-shrink: 0;
+
+	&.shrink {
+		flex-shrink: 1;
+	}
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+@mixin modal-body{
+	display: flex;
+	flex-direction: column;
+	padding: 0 48px 40px 48px;
+	flex-grow: 1;
+	overflow: auto;
+	line-height: 23px;
+}
+
+@mixin modal-footer {
+	background-color: #F7F9FA;
+	border: 1px solid #D4E1EE;
+	border-radius: 0px 0px 4px 4px;
+	width: 100%;
+	flex: 0 0 64px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 48px;
+
+	.coding-bar-button {
+		margin-left: 16px;
+	}
+}
+@mixin ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+// --- default type----
+.action {
+	height: calc(100vh - 83px);
+	max-height: calc(100vh - 83px);
+	width: 1066px;
+	max-width: 1066px;
+	@include  modal;
+	
+	.modal-header-cont {
+		@include modal-header;
+
+		.header-arrow {
+			cursor: pointer;
+		}
+		.header-title {
+			@include ellipsis;
+			@include modal-header-title
+			
+		}
+	}
+
+	.modal-body-cont {
+		@include modal-body;
+		position: relative;
+
+		.alert-text {
+			color: red;
+			position: absolute;
+			right: 48px;
+			bottom: 0;
+		}
+	}
+	
+	.modal-footer-cont {
+		@include modal-footer;
+	}
+}

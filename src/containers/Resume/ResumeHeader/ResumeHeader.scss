@@ -1,0 +1,84 @@
+.ResumeHeader {
+	position: fixed;
+	top: 60px;
+	width: 100%;
+	height: 57px;
+	background: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 50px 0;
+	z-index: 888;
+
+	nav {
+		display: flex;
+		gap: 10px;
+
+		a {
+			position: relative;
+			text-decoration: none;
+			padding: 12px 20px;
+			color: #fff;
+			font-weight: 700;
+		}
+
+		a.active {
+			background: var(--clr);
+			color: #333;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+		}
+
+		a.active::before {
+			content: '';
+			position: absolute;
+			left: -20px;
+			bottom: 0;
+			width: 20px;
+			height: 20px;
+			background: transparent;
+			clip: rect(0px 20px 20px 0px);
+
+			border-bottom-right-radius: 20px;
+			box-shadow: 5px 5px 0 5px var(--clr);
+		}
+
+		a.active::after {
+			content: '';
+			position: absolute;
+			right: -20px;
+			bottom: 0;
+			width: 20px;
+			height: 20px;
+			background: transparent;
+			clip: rect(0px 20px 20px 0px);
+
+			border-bottom-left-radius: 20px;
+			box-shadow: -5px 5px 0 5px var(--clr);
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.ResumeHeader {
+		nav {
+			position: absolute;
+
+			&.Information {
+				left: calc(50vw - 82px);
+			}
+
+			&.Experience {
+				left: calc(50vw - 210px);
+			}
+
+			&.SideProject {
+				left: calc(50vw - 328px);
+			}
+
+			&.Learn {
+				left: calc(50vw - 456px);
+			}
+		}
+	}
+}

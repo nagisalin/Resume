@@ -1,0 +1,38 @@
+.component-modal {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: #ffffff;
+	border-radius: 4px;
+	outline: 0;
+	max-height: calc(100vh - 83px);
+}
+
+.component-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 120;
+}
+
+.modal-close-button {
+	position: absolute;
+	top: 32px;
+	right: 48px;
+	width: 30px;
+	height: 30px;
+	border: none;
+	outline: 0;
+	z-index: 3;
+}
+
+// @media all and (max-height:700px) {
+// 	.component-modal {
+// 		left: 50%;
+// 		top: 53%;
+// 	}
+// }

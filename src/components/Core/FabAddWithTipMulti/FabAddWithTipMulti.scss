@@ -1,0 +1,70 @@
+.fab {
+	position: fixed;
+	right: 32px;
+	bottom: 40px;
+
+	&.btn-circle-multi {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	
+		min-width: 64px;
+		min-height: 64px;
+		border: 0px;
+		border-radius: 32px;
+		background: #29354c;
+		mix-blend-mode: normal;
+		box-shadow: 0px 6px 10px rgba(181, 181, 181, 0.5),
+			0px 2px 4px rgba(166, 166, 166, 0.6);
+		padding: 0 16px;
+		cursor: pointer;
+	}
+
+	&.show-expand-false {
+		width: 64px !important;
+		height: 64px !important;
+	}
+	
+	&.show-expand-true {
+		height: 64px !important;
+	}
+
+	.fab-item-plus {
+		display: inline;
+		color: #ffffff;
+		height: 32px;
+	}
+
+	.fab-item {
+		display: inline;
+		color: #ffffff;
+		line-height: 64px;
+		padding: 0px 16px;
+	
+		animation-name: fabExpand;
+		animation-duration: 0.15s;
+	}
+}
+
+/* force overwrite bootstrap style */
+.tooltip > .tooltip-arrow {
+	border-top-color: #29354c !important;
+}
+
+.tooltip > .tooltip-inner {
+	background-color: #29354c !important;
+	border-radius: 20px !important;
+	padding: 10px 10px;
+	color: #fff !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+}
+
+@keyframes fabExpand {
+	from {
+		padding: 0 16px 0 0px;
+	}
+	to {
+		padding: 0 16px 0 16px;
+	}
+}

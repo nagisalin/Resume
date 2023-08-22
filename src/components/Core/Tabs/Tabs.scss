@@ -1,0 +1,31 @@
+.Tabs {
+	padding: 0 16px;
+	margin: 0 0 12px;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	border: 1px solid #d4e1ee;
+	border-radius: 12px;
+	width: 100%;
+
+	&.only-bottom-border {
+		border-left: none;
+		border-right: none;
+		border-top: none;
+		border-radius: 0px;
+		padding: 0;
+	}
+}
+
+.Tabs-content {
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	border: 1px solid rgba(162, 178, 210, 0.35);
+	border: 1px solid rgba(162, 178, 210, 0.5);
+	border-radius: 12px;
+
+	&.no-border {
+		border: none;
+	}
+}
