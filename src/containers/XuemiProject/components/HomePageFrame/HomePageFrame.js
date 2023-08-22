@@ -1,15 +1,11 @@
-import React, { useState, useCallback, useEffect, useRef } from 'react';
+import React from 'react';
 
 import Header from '../Header/Header';
 import InnerContent from '../InnerContent/InnerContent';
 
 import './HomePageFrame.scss';
 
-const HomePageFrame = React.memo(function HomePageFrame(
-	{
-		//props
-	}
-) {
+const HomePageFrame = React.memo(function HomePageFrame() {
 	return (
 		<div className="homePageFrame">
 			<div className="homePageFrame-Content">

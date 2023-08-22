@@ -1,11 +1,5 @@
-import React, { Fragment, useState, useCallback, useEffect, useRef } from 'react';
-import {
-	BrowserRouter as Router,
-	Routes,
-	Route,
-	Redirect,
-	useLocation,
-} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import Index from '../../containers/Index/Index';
 import Recipes from '../../containers/Recipes/Recipes';
@@ -13,11 +7,7 @@ import Dinner from '../../containers/Dinner/Dinner';
 import Cooking from '../../containers/Cooking/Cooking';
 import About from '../../containers/About/About';
 
-const InnerContent = React.memo(function InnerContent(
-	{
-		//props
-	}
-) {
+const InnerContent = React.memo(function InnerContent() {
 	const urlParams = useLocation();
 
 	const [element, setElement] = useState(null);

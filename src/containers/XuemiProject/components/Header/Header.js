@@ -1,15 +1,11 @@
-import React, { useState, useCallback, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Header.scss';
 import { HeaderItems } from './config';
 import Logo from './Logo.png';
 
-const Header = React.memo(function Header(
-	{
-		//props
-	}
-) {
+const Header = React.memo(function Header() {
 	const [ isSearching, setIsSearching ] = useState(false);
 
 	const renderHeader = () => {
@@ -24,7 +20,7 @@ const Header = React.memo(function Header(
 
 	return (
 		<div className="homePageFrame-header">
-			<Link to={'/xuemi_project'}><img src={Logo} className="homePageFrame-header-logo"/></Link>
+			<Link to={'/xuemi_project'}><img src={Logo} alt="header-logo" className="homePageFrame-header-logo"/></Link>
 
 			<div className="homePageFrame-header-block">
 				<i className="fa-solid fa-magnifying-glass homePageFrame-header-block-searchIcon" onClick={() => setIsSearching(!isSearching)}></i>

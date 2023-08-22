@@ -41,7 +41,6 @@ const LoginPage = () => {
 			const userCredential = await signInWithEmailAndPassword(auth, email, password);
 			const user = userCredential.user;
 			alert("登入成功!")
-			// 成功登入要跳轉頁面到其他 page?
 		} catch (error) {
 			const errorCode = error.code; //auth/invalid-email  auth/user-not-found  auth/wrong-password  auth/too-many-requests  auth/network-request-failed
 			let msg = ""

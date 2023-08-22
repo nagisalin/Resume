@@ -21,12 +21,12 @@ const ProgressRow = (props) => {
 	};
 
 	const formatDate = (timeStamp) => {
-		var year = timeStamp.getFullYear();
+		// var year = timeStamp.getFullYear();
 		var month = ('0' + (timeStamp.getMonth() + 1)).slice(-2); // 注意月份是从0开始计数的
 		var day = ('0' + timeStamp.getDate()).slice(-2);
-		var hours = ('0' + timeStamp.getHours()).slice(-2);
-		var minutes = ('0' + timeStamp.getMinutes()).slice(-2);
-		var seconds = ('0' + timeStamp.getSeconds()).slice(-2);
+		// var hours = ('0' + timeStamp.getHours()).slice(-2);
+		// var minutes = ('0' + timeStamp.getMinutes()).slice(-2);
+		// var seconds = ('0' + timeStamp.getSeconds()).slice(-2);
 		
 		return month + '/' + day;
 	}

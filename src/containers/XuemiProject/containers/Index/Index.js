@@ -1,12 +1,8 @@
-import React, { useState, useCallback, useEffect, useRef } from 'react';
+import React from 'react';
 
 import './Index.scss';
 
-const Index = React.memo(function Index(
-	{
-		//props
-	}
-) {
+const Index = React.memo(function Index() {
 	return (
 		<div className="homePageFrame-InnerContent">
 			<div className="homePageFrame-InnerContent-title">Let's Get Cooking!</div>

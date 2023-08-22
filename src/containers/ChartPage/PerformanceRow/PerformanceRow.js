@@ -20,7 +20,6 @@ const PerformanceRow = (props) => {
 		barBottomWidth,
 		linearTransfer,
 		testType,
-		t,
 	} = props;
 
 	const linearTransform = (max, min, value) => {
