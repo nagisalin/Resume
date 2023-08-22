@@ -2,7 +2,7 @@
 	"name": "Resume",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://nagisalin.github.io/Resume",
+	"homepage": "https://nagisalin.github.io/resume",
 	"dependencies": {
 		"firebase": "^10.1.0",
 		"gh-pages": "^5.0.0",
