@@ -4,20 +4,26 @@
 	padding: 0 16px;
 	height: initial;
 
-	.row-title {
-		margin: 0;
-		font-size: 16px;
-		line-height: 23px;
-		flex: 0 0 98px;
-		text-align: center;
-	}
+	.progress-block-left {
+		width: 25%;
+		display: flex;
+		align-items: center;
 
-	.progress-text {
-		padding: 24px 0 24px 24px;
-		margin-left: 16px;
-		font-size: 16px;
-		line-height: 23px;
-		flex: 0 0 184px;
+		.row-title {
+			margin: 0;
+			font-size: 16px;
+			line-height: 23px;
+			flex: 0 0 98px;
+			text-align: center;
+		}
+
+		.progress-text {
+			padding: 24px 0 24px 24px;
+			margin-left: 16px;
+			font-size: 16px;
+			line-height: 23px;
+			flex: 0 0 184px;
+		}
 	}
 
 	.progress-cont-border {
@@ -67,6 +73,42 @@
 				justify-content: flex-end;
 				font-size: 14px;
 				color: #8390ab;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1000px) {
+	.progress-block {
+		.progress-block-left {
+			width: 180px;
+
+			.progress-text {
+				flex: initial;
+				margin-left: 8px;
+				padding: 24px 0px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.progress-block {
+		flex-direction: column;
+
+		.row-title {
+			flex: initial;
+		}
+
+		.progress-cont-border {
+			width: 90%;
+			padding: 0px 0px 10px 0px;
+
+			.progress-cont {
+				padding-left: 0px;
+				border-left: initial;
+
 			}
 		}
 	}

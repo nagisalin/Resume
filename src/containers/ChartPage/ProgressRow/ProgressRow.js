@@ -33,10 +33,12 @@ const ProgressRow = (props) => {
 
 	return (
 		<section className="progress-block">
-			<h3 className="row-title">商品狀態：</h3>
-			
-			<div className="progress-text">
-				已送達
+			<div className="progress-block-left">
+				<h3 className="row-title">商品狀態：</h3>
+				
+				<div className="progress-text">
+					已送達
+				</div>
 			</div>
 			
 			<div className='progress-cont-border'> {/* 純粹為了外框線加的 div */}

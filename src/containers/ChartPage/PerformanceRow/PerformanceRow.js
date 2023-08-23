@@ -33,28 +33,30 @@ const PerformanceRow = (props) => {
 			{rowTitle ? <h3 className="row-title">{rowTitle}</h3> : null}
 
 			<div className={rowTitle ? 'row-content' : 'row-content noTitle'}>
-				<div className="row-block-item">
-					{testType ? (
-						<span
-							className={
-								leftBlockValue >= 80 ? 'block-text EXC' : leftBlockValue < 60 ? 'block-text Poor' : 'block-text'
-							}>
-							{leftBlockValue}
-						</span>
-					) : (
-						<span className={`block-text ${leftBlockValue}`}>{leftBlockValue}</span>
-					)}
-					<span className="block-subtext">{leftBlockSubtitle || "leftBlockSubtitle"}</span>
-				</div>
+				<div className="row-block-var">
+					<div className="row-block-item">
+						{testType ? (
+							<span
+								className={
+									leftBlockValue >= 80 ? 'block-text EXC' : leftBlockValue < 60 ? 'block-text Poor' : 'block-text'
+								}>
+								{leftBlockValue}
+							</span>
+						) : (
+							<span className={`block-text ${leftBlockValue}`}>{leftBlockValue}</span>
+						)}
+						<span className="block-subtext">{leftBlockSubtitle || "leftBlockSubtitle"}</span>
+					</div>
 
-				<div className="row-block-item">
-					<span className="block-text">{middleBlockValue}</span>
-					<span className="block-subtext">{middleBlockSubtitle}</span>
-				</div>
+					<div className="row-block-item">
+						<span className="block-text">{middleBlockValue}</span>
+						<span className="block-subtext">{middleBlockSubtitle}</span>
+					</div>
 
-				<div className="row-block-item">
-					<span className="block-text">{rightBlockValue}</span>
-					<span className="block-subtext">{rightBlockSubtitle || "rightBlockSubtitle"}</span>
+					<div className="row-block-item">
+						<span className="block-text">{rightBlockValue}</span>
+						<span className="block-subtext">{rightBlockSubtitle || "rightBlockSubtitle"}</span>
+					</div>
 				</div>
 
 				<div className="stu-average-block">

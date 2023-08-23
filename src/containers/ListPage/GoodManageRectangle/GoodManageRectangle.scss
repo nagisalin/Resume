@@ -86,3 +86,38 @@
 		width: calc(100% - 64px);
 	}
 }
+
+@media (max-width: 650px) {
+
+	.Good-Manage-Rectangle {
+		.Good-Manage-Rectangle-Container {
+			.Good-Manage-Rectangle-Index {
+				display: none;
+			}
+
+			.Good-Manage-Rectangle-Info {
+				margin-left: 12px;
+
+				.Good-Manage-Rectangle-Info-displayName {
+					margin-right: 0px;
+				}
+
+				.Good-Manage-Rectangle-Info-price {
+					margin-right: 0px;
+				}
+
+				.Good-Manage-Rectangle-Info-amount {
+					margin-right: 0px;
+				}
+
+				.Good-Manage-Rectangle-Info-location {
+					width: var(--locationW);
+				}
+			}
+		}
+
+		.Good-Manage-Rectangle-IconMenu {
+			right: 35px;
+		}
+	}
+}

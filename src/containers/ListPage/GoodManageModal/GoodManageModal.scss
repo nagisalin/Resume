@@ -40,3 +40,15 @@
 		}
 	}
 }
+
+@media (max-width: 650px) {
+	.Good-Manage-Modal {
+		width: 400px;
+	}
+}
+
+@media (max-width: 450px) {
+	.Good-Manage-Modal {
+		width: 300px;
+	}
+}

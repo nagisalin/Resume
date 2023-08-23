@@ -125,6 +125,8 @@
 
 @media (max-width: 786px) {
 	.ListPage {
+		padding: 40px 40px;
+
 		--displayNameW: 130px;
 		--priceW: 60px;
 		--amountW: 60px;
@@ -135,7 +137,42 @@
 
 			.ListPage-SearchBox {
 				margin-top: 16px;
+				width: 100%;
 			}
 		}
 	}
+}
+
+@media (max-width: 650px) {
+	.ListPage {
+		--displayNameW: 80px;
+		--priceW: 60px;
+		--amountW: 60px;
+		--locationW: 90px;
+
+		.ListPage-Header {
+			.ListPage-SearchBox {
+				width: 100%;
+			}
+		}
+
+		.ListPage-ListContent {
+			.sort-header {
+				padding-left: 12px;
+
+				.sort-by-displayName {
+					margin-right: 0px;
+				}
+	
+				.sort-by-price {
+					margin-right: 0px;
+				}
+			
+				.sort-by-amount {
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+
 }
