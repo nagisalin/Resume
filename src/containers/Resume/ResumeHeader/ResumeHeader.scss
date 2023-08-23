@@ -65,19 +65,19 @@
 			position: absolute;
 
 			&.Information {
-				left: calc(50vw - 82px);
+				left: calc(50% - 82px);
 			}
 
 			&.Experience {
-				left: calc(50vw - 210px);
+				left: calc(50% - 210px);
 			}
 
 			&.SideProject {
-				left: calc(50vw - 328px);
+				left: calc(50% - 328px);
 			}
 
 			&.Learn {
-				left: calc(50vw - 456px);
+				left: calc(50% - 456px);
 			}
 		}
 	}
