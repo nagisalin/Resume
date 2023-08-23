@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.f45b2554.css",
-    "main.js": "/resume/static/js/main.75d3b77a.js",
+    "main.css": "/resume/static/css/main.ee169a93.css",
+    "main.js": "/resume/static/js/main.cee5830b.js",
     "static/media/exerciseEditorPage.png": "/resume/static/media/exerciseEditorPage.3caa26dc0d3703224176.png",
     "static/media/selectAllWordB.png": "/resume/static/media/selectAllWordB.6c5d270dbba9973ff785.png",
     "static/media/selectAllWordA.png": "/resume/static/media/selectAllWordA.e61c3d4e4f62cf320bb0.png",
@@ -30,11 +30,11 @@
     "index.html": "/resume/index.html",
     "static/media/arrowUp.svg": "/resume/static/media/arrowUp.c379e861ce6f52b30dbdcac2d6ac3c47.svg",
     "static/media/plus-white.svg": "/resume/static/media/plus-white.3004a9ba4a63f11ff418fe5d860510c6.svg",
-    "main.f45b2554.css.map": "/resume/static/css/main.f45b2554.css.map",
-    "main.75d3b77a.js.map": "/resume/static/js/main.75d3b77a.js.map"
+    "main.ee169a93.css.map": "/resume/static/css/main.ee169a93.css.map",
+    "main.cee5830b.js.map": "/resume/static/js/main.cee5830b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f45b2554.css",
-    "static/js/main.75d3b77a.js"
+    "static/css/main.ee169a93.css",
+    "static/js/main.cee5830b.js"
   ]
 }
