@@ -76,6 +76,7 @@ DB 存取於 FireStore`}
 							<li>i18n</li>
 							<li>Git</li>
 							<li>WordPress</li>
+							<li style={{whiteSpace: "pre-wrap"}}>{`資安弱掃處理\n(黑箱:ZAP/白箱:SonarQube)`}</li>
 						</ul>
 					</div>
 				</div>

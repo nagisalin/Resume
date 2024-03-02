@@ -4,6 +4,33 @@ import './Experience.scss';
 const Experience = () => {
 	const experiences = [
 		{
+			duration: '九月 2023 - 二月 2024',
+			title: 'Front-End Engineer',
+			company: '太平洋建設(蝦米智慧) (已離職)',
+			position: '專案前端開發 / 資安弱點掃描',
+			description: `專案型處理前端工作事項，
+根據設計製作並一人完成從開版到 RWD 樣式、Webpack 設定等，
+乃至 Deploy 於 IIS 令專案上線。
+			
+專案分別為：
+[外部專案類]
+- 製作<a href="https://www.sabahyan.com/" target="_blank" rel="noreferrer noopener">沙巴官燕官方網站</a>
+- 製作<a href="http://www.pacific-aiot.com.tw/" target="_blank" rel="noreferrer noopener">泉源國際官方網站</a>
+- 製作<a href="https://transport-curation.nat.gov.tw/museum/index.html" target="_blank" rel="noreferrer noopener">松山機場小學堂活動網站</a>
+
+[內部專案類]
+- 新北市府停車場後台管理系統 (含獨立設計)
+- 新竹警局 ISMS 管理系統 (含獨立設計)
+- 泉源國際內部 OA 管理系統 (含獨立設計)
+   此專案有額外 Node.js 建立全端設計
+   供公司同仁進行 上下班打卡 及 公告資訊用 系統
+- 停車場事業 KIOSK 繳費機系統介面 (含獨立設計)
+
+除一般專案外，亦負責專案的資安弱掃處理項目，
+針對專案定期進行黑白箱弱掃，
+並協助修復掃描問題。`
+		},
+		{
 			duration: '七月 2021 - 六月 2023',
 			title: 'Front-End Engineer',
 			company: '瑞比智慧科技(CodingBar) (已離職)',
@@ -36,8 +63,8 @@ const Experience = () => {
 								<div className="position">{experience.position}</div>
 							</div>
 
-							<div className="job-list">
-								{experience.description}
+							<div className="job-list" dangerouslySetInnerHTML={{ __html: experience.description }}>
+								{/* {experience.description} */}
 							</div>
 						</div>
 					))}
