@@ -7,6 +7,10 @@ import loginPageImg from 'design/pictures/loginPage.png';
 import chartPageImg from 'design/pictures/chartPage.png';
 import listPageImg from 'design/pictures/listPage.png';
 
+import aiParkImg from 'design/pictures/aiParkImg.png';
+import kioskImg from 'design/pictures/kioskImg.png';
+import oaImg from 'design/pictures/oaImg.png';
+
 const SideProject = () => {
 
 	return (
@@ -17,6 +21,55 @@ const SideProject = () => {
 				<div className="SideProject-Title">
 					作品應用
 				</div>
+
+				<div className="SideProject-Intro">
+					<div className="SideProject-Intro-Title">太平洋建設 專案製作</div>
+					<div className="SideProject-Intro-Description">{`在 太平洋建設 期間協助專案開發，
+以下各段將會針對內部開發專案進行說明，
+由於當中專案屬公司資產，故僅有截圖畫面及文字簡單介紹。
+
+另，外部專案可參考上方連結直接點選閱覽，故不再此展示說明。`}
+					</div>
+				</div>
+
+				<DemoBlock
+					img={aiParkImg}
+					imgAlt='aiPark'
+					title='新北市府停車場後台管理系統'
+					description={`協助開發新北市政府的停車場後台管理系統介面，
+功能上包括串接車辨即時影像，由後端提供 nvr 影像並以 websocket 封包回傳給前端，
+讓前端可以每秒 render 更新畫面達成監控螢幕功能。
+
+另外也串接後端資料庫處理
+停車紀錄總覽、設備清單等多種資料管理，
+以及為了讓客戶能查閱每月停車狀況，
+透過圓餅圖與折線圖形式呈現資料分析。`}
+				/>
+
+				<DemoBlock
+					img={oaImg}
+					imgAlt='oaImg'
+					inverse
+					title='泉源國際內部 OA 管理系統'
+					description={`協助開發公司內部的管理系統，
+透過 Node.js 的後端服務串 Api，讓前端可以點擊按鍵進行打卡紀錄，
+並且有設計公佈欄的方式提供同仁線上查閱最新消息，
+也有相關常用的內部公司文件範本可以線上下載，
+方便大家平常申請外出工單下載或新進同仁的管理規範查詢。`}
+				/>
+
+				<DemoBlock
+					img={kioskImg}
+					imgAlt='kioskImg'
+					title='停車場事業 KIOSK 繳費機系統介面'
+					description={`協助開發公司的停車場 KIOSK 繳費機介面，
+由於當時沒有 Design 協助，
+因此我當時是自行到外面參考現有產品介面，
+並統整歸納各家功能與概念後重新編排，
+在設計上特別修改的點是
+底下 Footer 有做 電話圖示 與 語言切換，
+這是大多數現有停車繳費機沒有的設計。`}
+				/>
 
 				<div className="SideProject-Intro">
 					<div className="SideProject-Intro-Title">CodingBar 線上教學平台系統</div>

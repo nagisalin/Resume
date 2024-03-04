@@ -17,8 +17,8 @@ const DemoBlock = (props) => {
 				<div className={classnames("DemoBlock-Content-description", { inverse })}>
 					{description}
 				</div>
-
-				<Link to={url} className="DemoBlock-Content-demoLink">Demo</Link>
+				{url &&
+					<Link to={url} className="DemoBlock-Content-demoLink">Demo</Link>}
 			</div>
 		</div>
 	)
