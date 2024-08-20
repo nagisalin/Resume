@@ -16,7 +16,7 @@ const Experience = () => {
 [外部專案類]
 - 製作<a href="https://www.sabahyan.com/" target="_blank" rel="noreferrer noopener">沙巴官燕官方網站</a>
 - 製作<a href="http://www.pacific-aiot.com.tw/" target="_blank" rel="noreferrer noopener">泉源國際官方網站</a>
-- 製作<a href="https://transport-curation.nat.gov.tw/museum/index.html" target="_blank" rel="noreferrer noopener">松山機場小學堂活動網站</a>
+- 製作<span style="text-decoration: underline;">松山機場小學堂活動網站</span>(現已被下架QQ)
 
 [內部專案類]
 - 新北市府停車場後台管理系統 (含獨立設計)
@@ -28,26 +28,31 @@ const Experience = () => {
 
 除一般專案外，亦負責專案的資安弱掃處理項目，
 針對專案定期進行黑白箱弱掃，
-並協助修復掃描問題。`
+並協助修復掃描問題。`,
 		},
 		{
 			duration: '七月 2021 - 六月 2023',
 			title: 'Front-End Engineer',
 			company: '瑞比智慧科技(CodingBar) (已離職)',
 			position: '平台前端 Feature 開發 / Issue 維護',
-			description: '- 協助製作程式教學平台，前端維護與需求開發\n- 負責與後端溝通合作串接 API 功能，定期 Weekly Meeting\n- 擔任前端負責人( 1~3 人成員) 分配工作項目 與 專案 PM\n\n- 協助 git 進退版處理，QA 把關 deploy 至 staging/prod\n- 建立 Notion 筆記制度，方便日後培訓公司新人或交接\n\n- 使用 GCP 與 Cloud Functions 承接外包自動化爬蟲專案\n- 使用 Wordpress 生成 CSFC 檢定 官網'
+			description:
+				'- 協助製作程式教學平台，前端維護與需求開發\n- 負責與後端溝通合作串接 API 功能，定期 Weekly Meeting\n- 擔任前端負責人( 1~3 人成員) 分配工作項目 與 專案 PM\n\n- 協助 git 進退版處理，QA 把關 deploy 至 staging/prod\n- 建立 Notion 筆記制度，方便日後培訓公司新人或交接\n\n- 使用 GCP 與 Cloud Functions 承接外包自動化爬蟲專案\n- 使用 Wordpress 生成 CSFC 檢定 官網',
 		},
 		{
 			duration: '四月 2018 - 七月 2021',
 			title: 'Course Design/Teaching',
 			company: '瑞比智慧科技(CodingBar) (已離職)',
 			position: '課程設計開發 / 教學講師\n(教學 Python, C++ / 國高中程式教育)',
-			description: '- 協助設計最初版 Python 程式教育課程，規劃投影片製作與課堂 習題設計，\n   以及後來的線上課程錄製與資優班學生特規教材\n- 整理課程開發所需資源，並建檔規格化處理\n- 擔任課程組負責人(3~5人成員) 分配工作項目 與 合作開發\n- 規劃 MTA(現稱 ITS) 考試題庫以提高證照合格通過率。'
+			description:
+				'- 協助設計最初版 Python 程式教育課程，規劃投影片製作與課堂 習題設計，\n   以及後來的線上課程錄製與資優班學生特規教材\n- 整理課程開發所需資源，並建檔規格化處理\n- 擔任課程組負責人(3~5人成員) 分配工作項目 與 合作開發\n- 規劃 MTA(現稱 ITS) 考試題庫以提高證照合格通過率。',
 		},
 	];
 
 	return (
-		<section id="Experience" className="ExperienceSection" style={{ "--clr": getComputedStyle(document.body).getPropertyValue('--lightYellow_color') }}>
+		<section
+			id="Experience"
+			className="ExperienceSection"
+			style={{ '--clr': getComputedStyle(document.body).getPropertyValue('--lightYellow_color') }}>
 			<div className="ResumeDivider" />
 
 			<div className="timeline-container">
